@@ -1,0 +1,20 @@
+        PROGRAM AREA_TRIANGLE
+        REAL A,B,C,AREA
+        WRITE(*,*) "ENTER THE VALUE OF A :>"
+        READ(*,*) A
+        WRITE(*,*) "ENTER THE VALUE OF B :>"
+        READ(*,*) B
+        WRITE(*,*) "ENTER THE VALUE OF C :>"
+        READ(*,*) C
+        AREA = FIND(A,B,C)
+        WRITE(*,*) "THE AREA OF THE TRIANGLE IS:>", AREA
+        PAUSE
+        STOP
+        END
+        REAL FUNCTION FIND(X,Y,Z)
+        REAL X,Y,Z,S
+        S= 0.5 * (X + Y + Z)
+        FIND = SQRT(S * (S - X) * (S - Y) * (S - Z))
+        RETURN
+        END
+        
