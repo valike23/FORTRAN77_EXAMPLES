@@ -1,0 +1,18 @@
+         PROGRAM ROOTS
+         DISC (E,F,G) = F * F - 4 * E * G
+         WRITE(*,*) "WHAT IS THE VALUE OF A"
+         READ(*,*) A
+         WRITE(*,*) "WHAT IS THE VALUE OF B"
+         READ(*,*) B
+         WRITE(*,*) "WHAT IS THE VALUE OF C"
+         READ(*,*) C
+         IF(DISC(A,B,C) .GE. 0.0)THEN
+         WRITE(*,*) "THE ROOTS ARE REAL"
+         ELSE IF(DISC(A,B,C) .LT. 0.0) THEN
+         WRITE(*,*) "THE ROOTS ARE UNREAL"
+         ELSE
+         WRITE(*,*) "THE ROOTS ARE EQUAL"
+         END IF
+         PAUSE
+         STOP
+         END
